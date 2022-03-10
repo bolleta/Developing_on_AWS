@@ -7,7 +7,7 @@ from botocore.exceptions import NoCredentialsError,ClientError
 
 def delete_object():
     s3 = boto3.resource('s3')
-    bucket = "tnobe-s3-sample"      # バケット名
+    bucket = "hazumik-s3-sample"      # バケット名
     key = 'Eiffel.jpg'              # オブジェクトのキー(ファイル名)
     obj = s3.Object(bucket,key)     # バケット名とキーを指定してオブジェクト作成
     obj.delete()                    # 削除実行

@@ -9,7 +9,7 @@ from botocore.exceptions import NoCredentialsError,ClientError
 
 def multipart_upload():
     s3client = boto3.client('s3')                 # S3クライアント取得
-    bucket =  "tnobe-s3-sample"                   # S3バケット取得
+    bucket =  "hazumik-s3-sample"                   # S3バケット取得
     file_path= "C:\\temp\\Big.zip"                # アップロードするオブジェクトのファイルパスを指定
     key = "Big.zip"                               # アップロードするオブジェクトのキーを指定
     MB = 1024 ** 2

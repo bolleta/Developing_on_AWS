@@ -11,7 +11,7 @@ if __name__ == '__main__':
       s3 = boto3.resource('s3')    # S3リソース取得
 
       # バケット名
-      bucket_name = "tnobe-s3-sample-0313"   # バケット名
+      bucket_name = "hazumik-s3-sample"   # バケット名
 
       # バケットの作成
       create_bucket_config = {}    # バケットの構成を作成

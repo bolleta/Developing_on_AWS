@@ -7,7 +7,7 @@ from botocore.exceptions import NoCredentialsError,ClientError
 
 def get_object():
     s3 = boto3.resource('s3')       # S3リソース取得
-    bucket = "tnobe-s3-sample"      # バケット名
+    bucket = "hazumik-s3-sample"      # バケット名
     key = 'cat.jpg'                 # オブジェクトのキー(ファイル名)
     obj = s3.Object(bucket,key)     # バケット名とキーを指定してオブジェクト作成
     response = obj.get()
